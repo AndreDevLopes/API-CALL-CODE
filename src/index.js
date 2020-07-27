@@ -19,6 +19,12 @@ app.use(express.urlencoded({extended:false}));
 
 app.use(express.json());
 
+app.use((req, res, next) => {
+ 
+    res.locals.user = req.user || null; //dados do usuario autenticado pelo passport e armazenado nessa variavel global
+    next();
+ });
+
 const PORT = process.env.PORT || 3000 ;
 
 app.listen(PORT, ()=>{
