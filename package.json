@@ -1,0 +1,8 @@
+{
+  "name": "API-CALL-CODE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lopes-bot/API-CALL-CODE.git",
+  "author": "lopes-bot <andrelopessfla@gmail.com>",
+  "license": "MIT"
+}
