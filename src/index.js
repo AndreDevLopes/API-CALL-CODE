@@ -2,10 +2,12 @@ const express = require('express');
 
 const app = express();
 const passport = require('passport');
+const session = require("express-session");
+
 //sessão
 app.use(
     session({
-      secret: "SigMed",
+      secret: "call",
       resave: true,
       saveUninitialized: true,
     })

@@ -6,7 +6,8 @@
   "author": "lopes-bot <andrelopessfla@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev":"nodemon src/index.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -19,5 +20,8 @@
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.3",
     "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
